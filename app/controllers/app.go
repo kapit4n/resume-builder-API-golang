@@ -3,6 +3,7 @@ package controllers
 import (
 	"github.com/revel/revel"
 	"rb-rgo/app/models"
+	"rb-rgo/app/repository"
 )
 
 type Queue []*models.Resume
@@ -16,12 +17,7 @@ func (c App) Index() revel.Result {
 }
 
 func (c App) ResumeList() revel.Result {
-	var q Queue
-	resume0 := &models.Resume{Id: "1", Title: "Full Stack GO Developer", Summary: "Summary"}
-	q = append(q, resume0)
-	resume1 := &models.Resume{Id: "2", Title: "Revel Developer", Summary: "Summary"}
-	q = append(q, resume1)
-	return c.RenderJSON(q)
+	return c.RenderJSON(repository.GetResumeRepository().GetResumes())
 }
 
 func (c App) ResumeById(id string) revel.Result {
