@@ -21,6 +21,11 @@ func (c App) ResumeList() revel.Result {
 }
 
 func (c App) ResumeById(id string) revel.Result {
-	res := &models.Resume{Id: "1", Title: "Full Stack Developer", Summary: "Summary"}
-	return c.RenderJSON(res)
+	
+	resume, err := repository.GetResumeRepository().GetResumeById(id)
+	if err != nil {
+		return c.RenderJSON(err.Error())
+	}
+
+	return c.RenderJSON(resume)
 }
