@@ -4,6 +4,7 @@ A high-productivity web framework for the [Go language](http://www.golang.org/).
 
 
 ### Start the web server:
+*   https://revel.github.io/tutorial/gettingstarted.html
 *   cd ~/gocode
 *   revel run rb-rgo
 
