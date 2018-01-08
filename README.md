@@ -8,9 +8,22 @@ A high-productivity web framework for the [Go language](http://www.golang.org/).
 *   cd ~/gocode
 *   revel run rb-rgo
 
-### Go to http://localhost:9000/ and you'll see:
+### Go to http://localhost:9000/resumes and you'll see:
 
-    "It works"
+    "
+[
+  {
+    "id": "1",
+    "title": "Full Stack GO Developer",
+    "summary": "Summary"
+  },
+  {
+    "id": "2",
+    "title": "Revel Developer",
+    "summary": "Summary"
+  }
+]
+"
 
 ## Code Layout
 
