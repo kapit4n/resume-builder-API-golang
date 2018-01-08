@@ -10,20 +10,7 @@ A high-productivity web framework for the [Go language](http://www.golang.org/).
 
 ### Go to http://localhost:9000/resumes and you'll see:
 
-    "
-[
-  {
-    "id": "1",
-    "title": "Full Stack GO Developer",
-    "summary": "Summary"
-  },
-  {
-    "id": "2",
-    "title": "Revel Developer",
-    "summary": "Summary"
-  }
-]
-"
+    "[  {    "id": "1",    "title": "Full Stack GO Developer",    "summary": "Summary"  },  {    "id": "2",    "title": "Revel Developer",    "summary": "Summary"  }]"
 
 ## Code Layout
 
